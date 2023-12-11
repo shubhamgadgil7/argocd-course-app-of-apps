@@ -7,10 +7,10 @@ metadata:
   labels:
     app.kubernetes.io/name: root-app-helm-approach
   name: root-app-helm-approach
-  namespace: argocd
+  namespace: default
 spec:
   destination:
-    namespace: argocd
+    namespace: default
     server: https://kubernetes.default.svc
   ignoreDifferences:
   - group: argoproj.io
